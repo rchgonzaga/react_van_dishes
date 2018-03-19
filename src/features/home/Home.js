@@ -38,7 +38,7 @@ export class Home extends Component {
         {loadRestaurantsByGpsPositionPending ? (
           <Loader active inline="centered" size="massive" />
         ) : (
-          <RestaurantType list={restaurantTypeList} />
+          <RestaurantType list={restaurantTypeList} logged={this.props.home.loggedIn} />
         )}
       </Container>
     );

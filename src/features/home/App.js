@@ -20,7 +20,6 @@ export class App extends Component {
     return (
       <div className="home-app">
         <div className="sidebar">
-          <p>Fulano de tal</p>
           {JSON.stringify(this.props.home.loggedInMsg)}
           {this.props.home.loggedIn ? (
             <div>

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { Card, Image, Container } from 'semantic-ui-react';
+import { Card, Image, Container, Popup, Button } from 'semantic-ui-react';
 
 export default class RestaurantType extends Component {
   static propTypes = {
     list: PropTypes.array,
+    logged: PropTypes.object.isRequired,
   };
 
   static defaultProps = {
@@ -22,7 +23,11 @@ export default class RestaurantType extends Component {
                 <Image src="http://www.scottshotelkillarney.com/files/hotel/hotel-a/03-dining/food-guiness2.jpg" />
                 <Card.Content>
                   <Card.Header>
-                    <Link to={`/restaurants/${item.id}`}>{item.name}</Link>
+                    {this.props.logged ? (
+                      <Link to={`/restaurants/${item.id}`}>{item.name}</Link>
+                    ) : (
+                      <Popup trigger={<h3>{item.name}</h3>} content="Loggin to see all the dishes" inverted />
+                    )}
                   </Card.Header>
                 </Card.Content>
               </Card>
