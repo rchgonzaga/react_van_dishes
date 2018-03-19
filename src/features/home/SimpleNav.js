@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Item, Divider, Header, Button } from 'semantic-ui-react';
+import { Divider, Button, Item, Header, Icon } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import { removeProductFromCart } from './redux/actions';
 
@@ -15,36 +15,23 @@ export class SimpleNav extends PureComponent {
     this.props.actions.removeProductFromCart(product);
   }
 
-  renderLinks(items, basePath) {
+
+  renderLinks() {
     return (
       <ul>
-        {items.reduce((prev, item) => {
-          if (item.autoIndexRoute) return prev;
-
-          let path;
-          if (/^\//.test(item.path)) {
-            path = item.path;
-          } else if (basePath === '/') {
-            path = `/${item.path}`;
-          } else {
-            path = `${basePath}/${item.path}`;
-          }
-
-          prev.push(
-            <li key={path}>
-              <Link to={path}>{item.name || item.path}</Link>
-            </li>,
-          );
-
-          if (item.childRoutes && item.childRoutes.length) {
-            prev.push(<li key={`${path}_wrapper`}>{this.renderLinks(item.childRoutes, path)}</li>);
-          }
-
-          return prev;
-        }, [])}
+        <li>
+          <Link to="/cousines"> <Icon name="home" /> Home</Link>
+        </li>
+        <li>
+          <Link to="/test-page"><Icon name="info circle" /> About us</Link>
+        </li>
+        <li>
+          <Link to="/cousines"><Icon name="user" /> Profile</Link>
+        </li>
       </ul>
     );
   }
+
 
   render() {
     const { cart } = this.props.home;
@@ -53,7 +40,7 @@ export class SimpleNav extends PureComponent {
     this.props.home.cart.map(item => (total += item.price));
     return (
       <div className="home-simple-nav">
-        {this.renderLinks(this.props.routes[0].childRoutes, '')}
+        {this.renderLinks()}
         <Divider />
         <h3>Total: $ {total.toFixed(2)}</h3>
         <Item.Group>
@@ -74,6 +61,7 @@ export class SimpleNav extends PureComponent {
     );
   }
 }
+
 
 /* istanbul ignore next */
 function mapStateToProps(state) {

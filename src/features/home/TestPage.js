@@ -16,6 +16,10 @@ export class TestPage extends Component {
       <div className="home-test-page">
         Page Content: home/TestPage1
         <br />
+        {JSON.stringify(this.props.home)}
+        <br />
+        {this.props.home.loggedInMsg}
+        <br />
         <button className="btn-plus-one" onClick={userLoggedInSucessfuly}>+</button>
         <br />
         <button className="btn-plus-one" onClick={userLoggedOutSucessfuly}>-</button>

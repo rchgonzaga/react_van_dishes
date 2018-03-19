@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import SimpleNav from './SimpleNav';
 import routeConfig from '../../common/routeConfig';
-import LoginForm from '../common/LoginForm';
+import LoginForm from './LoginForm';
 
 export class App extends Component {
   static propTypes = {
@@ -20,20 +20,19 @@ export class App extends Component {
     return (
       <div className="home-app">
         <div className="sidebar">
-          {JSON.stringify(this.props.home.loggedInMsg)}
           {this.props.home.loggedIn ? (
             <div>
               <h1>{this.props.home.userName}</h1>
               <SimpleNav routes={routeConfig} />
             </div>
           ) : (
-            <LoginForm message={this.props.home.loggedInMsg} />
+            <LoginForm home={this.props.home} />
           )}
         </div>
 
-        {/* I don't need this, but i'm trying something :) */}
+        {/* I don't need this, but i'm trying something :) {React.cloneElement(this.props.children, { loggedIn: this.props.home.loggedIn })} */}
         <div className="page-container">
-          {React.cloneElement(this.props.children, { loggedIn: this.props.home.loggedIn })}
+          {this.props.children}
         </div>
       </div>
     );

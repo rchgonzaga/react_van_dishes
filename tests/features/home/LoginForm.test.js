@@ -1,16 +1,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
-import { LoginForm } from 'src/features/common';
+import { LoginForm } from 'src/features/home';
 
-describe('common/LoginForm', () => {
+describe('home/LoginForm', () => {
   it('renders node with correct class name', () => {
     const renderedComponent = shallow(
       <LoginForm />
     );
 
     expect(
-      renderedComponent.find('.common-login-form').getElement()
+      renderedComponent.find('.home-login-form').getElement()
     ).to.exist;
   });
 });

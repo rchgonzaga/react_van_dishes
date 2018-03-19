@@ -8,3 +8,4 @@ export { default as RestaurantList } from './RestaurantList';
 export { default as Restaurant } from './Restaurant';
 export { default as ProductList } from './ProductList';
 export { default as SimpleNav } from './SimpleNav';
+export { default as LoginForm } from './LoginForm';

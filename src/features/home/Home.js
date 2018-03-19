@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Container, Button, Loader, Divider, Header } from 'semantic-ui-react';
-import { RestaurantType } from './';
+import RestaurantType from './RestaurantType';
 
 import { loadRestaurantsByType } from './redux/actions';
 
@@ -38,7 +38,7 @@ export class Home extends Component {
         {loadRestaurantsByGpsPositionPending ? (
           <Loader active inline="centered" size="massive" />
         ) : (
-          <RestaurantType list={restaurantTypeList} logged={this.props.home.loggedIn} />
+          <RestaurantType list={restaurantTypeList} />
         )}
       </Container>
     );

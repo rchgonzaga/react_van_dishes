@@ -8,9 +8,9 @@
 const initialState = {
   count: 0,
   userId: -1,
-  userName: '',
-  loggedIn: false,
-  loggedInMsg: 'Not logged!',
+  userName: 'adasda',
+  loggedIn: true,
+  loggedInMsg: 'User Not logged!',
   redditReactjsList: [],
   restaurantTypeList: [],
   restaurantList: [],
