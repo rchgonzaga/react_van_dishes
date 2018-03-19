@@ -1,6 +1,2 @@
 # README
-# react_van_dishes
-# react_van_dishes
-# react_van_dishes
-# react_van_dishes
-# react_van_dishes
+(https://raw.githubusercontent.com/rchgonzaga/react_van_dishes/master/screenshot/skip.png)
