@@ -9,7 +9,7 @@ const initialState = {
   count: 0,
   userId: -1,
   userName: '',
-  loggedIn: true,
+  loggedIn: false,
   loggedInMsg: 'Not logged!',
   redditReactjsList: [],
   restaurantTypeList: [],
