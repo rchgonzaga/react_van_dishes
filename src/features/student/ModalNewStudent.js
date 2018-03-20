@@ -33,10 +33,10 @@ export class ModalNewStudent extends Component {
     );
 
     return (
-      <Modal open={this.props.student.modalNewUserVisible} basic size="small">
-        <Header icon="browser" content="Cookies policy" />
+      <Modal open={this.props.student.modalNewUserVisible} size="small">
+        <Header icon="browser" content={this.props.title} />
         <Modal.Content>
-          <h3>This website uses cookies to ensure the best user experience.</h3>
+          <StudentForm />
         </Modal.Content>
         <Modal.Actions>
           <Button color="green" inverted onClick={() => this.handleClose()}>

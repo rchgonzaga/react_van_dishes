@@ -25,19 +25,28 @@ export class DefaultPage extends Component {
     this.props.actions.showModalNewStudent();
   }
 
+  handleRefreshStudentList() {
+    this.props.actions.loadStudentList();
+  }
+
   render() {
     return (
       <Container>
-        <ModalNewStudent />
-        {JSON.stringify(this.props.student.modalNewUserVisible)}
+        <ModalNewStudent title="New Student" />
+
         <Header as="h1" color="blue">
-          Select Your perfect type of restaurant!
+          List of Students
         </Header>
         <Button.Group fluid>
           <Button onClick={() => this.props.history.goBack()}>Cancel</Button>
           <Button.Or />
+          <Button color="blue" onClick={() => this.handleRefreshStudentList()}>
+            Refresh Students
+          </Button>
+          <Button.Or />
           <Button positive content="Add new Student" icon="users" onClick={() => this.handleOpenNewStudentModal()} />
         </Button.Group>
+
         <Divider />
         <StudentList />
       </Container>
