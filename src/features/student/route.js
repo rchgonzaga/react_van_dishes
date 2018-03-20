@@ -6,8 +6,8 @@ import {
 } from './';
 
 export default {
-  path: 'studant',
-  name: 'Studant',
+  path: 'student',
+  name: 'Student',
   childRoutes: [
     { path: 'default-page', name: 'Default page', component: DefaultPage, isIndex: true },
   ],

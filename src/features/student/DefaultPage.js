@@ -6,14 +6,14 @@ import * as actions from './redux/actions';
 
 export class DefaultPage extends Component {
   static propTypes = {
-    studant: PropTypes.object.isRequired,
+    student: PropTypes.object.isRequired,
     actions: PropTypes.object.isRequired,
   };
 
   render() {
     return (
-      <div className="studant-default-page">
-        Page Content: studant/DefaultPage
+      <div className="student-default-page">
+        Page Content: student/DefaultPage
       </div>
     );
   }
@@ -22,7 +22,7 @@ export class DefaultPage extends Component {
 /* istanbul ignore next */
 function mapStateToProps(state) {
   return {
-    studant: state.studant,
+    student: state.student,
   };
 }
 

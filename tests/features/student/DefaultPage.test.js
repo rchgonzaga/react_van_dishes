@@ -1,12 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
-import { DefaultPage } from 'src/features/studant/DefaultPage';
+import { DefaultPage } from 'src/features/student/DefaultPage';
 
-describe('studant/DefaultPage', () => {
+describe('student/DefaultPage', () => {
   it('renders node with correct class name', () => {
     const props = {
-      studant: {},
+      student: {},
       actions: {},
     };
     const renderedComponent = shallow(
@@ -14,7 +14,7 @@ describe('studant/DefaultPage', () => {
     );
 
     expect(
-      renderedComponent.find('.studant-default-page').getElement()
+      renderedComponent.find('.student-default-page').getElement()
     ).to.exist;
   });
 });

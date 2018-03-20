@@ -1,7 +1,7 @@
 import { expect } from 'chai';
-import reducer from 'src/features/studant/redux/reducer';
+import reducer from 'src/features/student/redux/reducer';
 
-describe('studant/redux/reducer', () => {
+describe('student/redux/reducer', () => {
   it('does nothing if no matched action', () => {
     const prevState = {};
     const state = reducer(
