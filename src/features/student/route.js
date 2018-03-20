@@ -9,6 +9,6 @@ export default {
   path: 'student',
   name: 'Student',
   childRoutes: [
-    { path: 'default-page', name: 'Default page', component: DefaultPage, isIndex: true },
+    { path: 'init', name: 'Studant Home', component: DefaultPage, isIndex: true },
   ],
 };
