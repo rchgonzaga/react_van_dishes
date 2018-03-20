@@ -10,14 +10,34 @@ export class ModalNewStudent extends Component {
     student: PropTypes.object.isRequired,
     actions: PropTypes.object.isRequired,
   };
+  state = { form: { firstname: '', lastname: '' }, submittedForm: { name: '', email: '' } };
+
   handleClose = () => this.props.actions.closeModalNewStudent();
+
+  handleChange = (e, { name, value }) => this.setState({ [name]: value });
+
   render() {
+    const { firstname, lastname } = this.state.form;
+
     const StudentForm = () => (
       <Form>
         <Form.Group>
-          <Form.Input label="First name" placeholder="First Name" width={6} />
-          <Form.Input label="Middle Name" placeholder="Middle Name" width={4} />
-          <Form.Input label="Last Name" placeholder="Last Name" width={6} />
+          <Form.Input
+            label="First name"
+            placeholder="First Name"
+            name="firstname"
+            value={firstname}
+            onChange={this.handleChange}
+            width={8}
+          />
+          <Form.Input
+            label="Last Name"
+            placeholder="Last Name"
+            name="lastname"
+            value={lastname}
+            onChange={this.handleChange}
+            width={8}
+          />
         </Form.Group>
         <Form.Group>
           <Form.Input placeholder="2 Wide" width={2} />

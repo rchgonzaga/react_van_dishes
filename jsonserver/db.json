@@ -3,37 +3,37 @@
     {
       "id": 1,
       "firstname": "Rafael",
-      "secondname": "Gonzaga",
+      "lastname": "Gonzaga",
       "image": ""
     },
     {
       "id": 2,
       "firstname": "Jao",
-      "secondname": "Flowers",
+      "lastname": "Flowers",
       "image": ""
     },
     {
       "id": 3,
       "firstname": "Osmir",
-      "secondname": "Tadela",
+      "lastname": "Tadela",
       "image": ""
     },
     {
       "id": 4,
       "firstname": "Marra",
-      "secondname": "Paiz",
+      "lastname": "Paiz",
       "image": ""
     },
     {
       "id": 5,
       "firstname": "Urrs",
-      "secondname": "Minhinho",
+      "lastname": "Minhinho",
       "image": ""
     },
     {
       "id": 6,
       "firstname": "Sá",
-      "secondname": "Minhinho",
+      "lastname": "Minhinho",
       "image": ""
     }
   ],
