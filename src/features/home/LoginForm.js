@@ -26,11 +26,11 @@ export class LoginForm extends Component {
           <Form.Field>
             <Checkbox label="Keep logged" />
           </Form.Field>
-          <Button type="submit" fluid onClick={userLoggedInSucessfuly}>
+          <Button type="submit" fluid onClick={this.props.actions.userLoggedInSucessfuly}>
             Login
           </Button>
 
-          <button className="btn-plus-one" onClick={userLoggedOutSucessfuly}>
+          <button className="btn-plus-one" onClick={this.props.actions.userLoggedOutSucessfuly}>
             Logout
           </button>
         </Form>
