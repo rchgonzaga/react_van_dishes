@@ -28,6 +28,9 @@ export class SimpleNav extends PureComponent {
         <li>
           <Link to="/cousines"><Icon name="user" /> Profile</Link>
         </li>
+        <li>
+          <Link to="/student"><Icon name="user" /> Student list</Link>
+        </li>
       </ul>
     );
   }

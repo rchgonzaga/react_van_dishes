@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { Container } from 'semantic-ui-react';
 import * as actions from './redux/actions';
+import StudentList from './StudentList';
 
 export class DefaultPage extends Component {
   static propTypes = {
@@ -10,11 +12,15 @@ export class DefaultPage extends Component {
     actions: PropTypes.object.isRequired,
   };
 
+  componentDidMount() {
+    this.props.actions.loadStudentList();
+  }
+
   render() {
     return (
-      <div className="student-default-page">
-        Page Content: student/DefaultPage
-      </div>
+      <Container>
+        <StudentList />
+      </Container>
     );
   }
 }
@@ -29,11 +35,8 @@ function mapStateToProps(state) {
 /* istanbul ignore next */
 function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators({ ...actions }, dispatch)
+    actions: bindActionCreators({ ...actions }, dispatch),
   };
 }
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(DefaultPage);
+export default connect(mapStateToProps, mapDispatchToProps)(DefaultPage);
