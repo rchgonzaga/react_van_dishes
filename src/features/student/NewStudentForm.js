@@ -29,7 +29,7 @@ const NewStudentForm = (props) => {
           width={4}
           options={genreList}
           onChange={(e, value) => {console.log(e, value);}}
-          placeholder="Choose One"/>
+          placeholder="Choose One" />
       </Form.Group>
       <Form.Group>
         <Form.Input placeholder="2 Wide" width={2} />

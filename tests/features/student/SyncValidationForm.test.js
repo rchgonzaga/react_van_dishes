@@ -1,16 +1,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
-import { SyncValidationForm } from 'src/features/student/SyncValidationForm';
+import { NewStudentForm } from 'src/features/student/NewStudentForm';
 
-describe('student/SyncValidationForm', () => {
+describe('student/NewStudentForm', () => {
   it('renders node with correct class name', () => {
     const props = {
       student: {},
       actions: {},
     };
     const renderedComponent = shallow(
-      <SyncValidationForm {...props} />
+      <NewStudentForm {...props} />
     );
 
     expect(

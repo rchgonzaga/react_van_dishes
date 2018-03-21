@@ -22,22 +22,22 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/20</span>
+        <span class='fraction'>0/9</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/12</span>
+        <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/7</span>
+        <span class='fraction'>0/6</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/18</span>
+        <span class='fraction'>0/8</span>
       </div>
     </div>
     <p class="quiet">
@@ -129,16 +129,7 @@
 <a name='L81'></a><a href='#L81'>81</a>
 <a name='L82'></a><a href='#L82'>82</a>
 <a name='L83'></a><a href='#L83'>83</a>
-<a name='L84'></a><a href='#L84'>84</a>
-<a name='L85'></a><a href='#L85'>85</a>
-<a name='L86'></a><a href='#L86'>86</a>
-<a name='L87'></a><a href='#L87'>87</a>
-<a name='L88'></a><a href='#L88'>88</a>
-<a name='L89'></a><a href='#L89'>89</a>
-<a name='L90'></a><a href='#L90'>90</a>
-<a name='L91'></a><a href='#L91'>91</a>
-<a name='L92'></a><a href='#L92'>92</a>
-<a name='L93'></a><a href='#L93'>93</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L84'></a><a href='#L84'>84</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -156,19 +147,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -176,11 +154,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -200,6 +181,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -234,7 +216,7 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Item, Divider, Header, Button } from 'semantic-ui-react';
+import { Divider, Button, Item, Header, Icon } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import { removeProductFromCart } from './redux/actions';
 &nbsp;
@@ -247,36 +229,26 @@ export class SimpleNav extends PureComponent {
 <span class="cstat-no" title="statement not covered" >    this.props.actions.removeProductFromCart(product);</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  re</span>nderLinks(items, basePath) {
+&nbsp;
+<span class="fstat-no" title="function not covered" >  re</span>nderLinks() {
 <span class="cstat-no" title="statement not covered" >    return (</span>
       &lt;ul&gt;
-        {items.reduce(<span class="fstat-no" title="function not covered" >(p</span>rev, item) =&gt; {
-<span class="cstat-no" title="statement not covered" >          if (item.autoIndexRoute) <span class="cstat-no" title="statement not covered" >return prev;</span></span>
-&nbsp;
-          let path;
-<span class="cstat-no" title="statement not covered" >          if (/^\//.test(item.path)) {</span>
-<span class="cstat-no" title="statement not covered" >            path = item.path;</span>
-          } else <span class="cstat-no" title="statement not covered" >if (basePath === '/') {</span>
-<span class="cstat-no" title="statement not covered" >            path = `/${item.path}`;</span>
-          } else {
-<span class="cstat-no" title="statement not covered" >            path = `${basePath}/${item.path}`;</span>
-          }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >          prev.push(</span>
-            &lt;li key={path}&gt;
-              &lt;Link to={path}&gt;{item.name || item.path}&lt;/Link&gt;
-            &lt;/li&gt;,
-          );
-&nbsp;
-<span class="cstat-no" title="statement not covered" >          if (item.childRoutes &amp;&amp; item.childRoutes.length) {</span>
-<span class="cstat-no" title="statement not covered" >            prev.push(&lt;li key={`${path}_wrapper`}&gt;{this.renderLinks(item.childRoutes, path)}&lt;/li&gt;);</span>
-          }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >          return prev;</span>
-        }, [])}
+        &lt;li&gt;
+          &lt;Link to="/cousines"&gt; &lt;Icon name="home" /&gt; Home&lt;/Link&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;Link to="/test-page"&gt;&lt;Icon name="info circle" /&gt; About us&lt;/Link&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;Link to="/cousines"&gt;&lt;Icon name="user" /&gt; Profile&lt;/Link&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;Link to="/student"&gt;&lt;Icon name="user" /&gt; Student list&lt;/Link&gt;
+        &lt;/li&gt;
       &lt;/ul&gt;
     );
   }
+&nbsp;
 &nbsp;
 <span class="fstat-no" title="function not covered" >  re</span>nder() {
     const { cart } = <span class="cstat-no" title="statement not covered" >this.props.home;</span>
@@ -285,7 +257,7 @@ export class SimpleNav extends PureComponent {
 <span class="cstat-no" title="statement not covered" >    this.props.home.cart.map(<span class="fstat-no" title="function not covered" >it</span>em =&gt; (<span class="cstat-no" title="statement not covered" >total += item.price)</span>);</span>
 <span class="cstat-no" title="statement not covered" >    return (</span>
       &lt;div className="home-simple-nav"&gt;
-        {this.renderLinks(this.props.routes[0].childRoutes, '')}
+        {this.renderLinks()}
         &lt;Divider /&gt;
         &lt;h3&gt;Total: $ {total.toFixed(2)}&lt;/h3&gt;
         &lt;Item.Group&gt;
@@ -306,6 +278,7 @@ export class SimpleNav extends PureComponent {
     );
   }
 }
+&nbsp;
 &nbsp;
 /* istanbul ignore next */
 function mapStateToProps(state) {
@@ -328,7 +301,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(SimpleNav);
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Mar 19 2018 06:16:16 GMT-0300 (-03)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Mar 20 2018 23:41:42 GMT-0300 (-03)
 </div>
 </div>
 <script src="../../../prettify.js"></script>
