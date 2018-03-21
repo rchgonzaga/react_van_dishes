@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Container, Header, Button, Divider } from 'semantic-ui-react';
+import { Container, Header, Button, Divider, Loader } from 'semantic-ui-react';
 import * as actions from './redux/actions';
 import StudentList from './StudentList';
 import ModalNewStudent from './ModalNewStudent';
@@ -28,7 +28,7 @@ export class DefaultPage extends Component {
 
   render() {
 
-    const { saveNewStudentPending, userSaved, saveNewStudentError} = this.props.student;
+    const { saveNewStudentPending, userSaved, saveNewStudentError, loadStudentListPending } = this.props.student;
 
     let msg = (saveNewStudentPending ? 'Saving student' : (userSaved === true && saveNewStudentError === null ? 'New Student' : 'Something went wrong :S'));
 
@@ -37,6 +37,7 @@ export class DefaultPage extends Component {
         <ModalNewStudent title={msg} />
         <Header as="h1" color="blue">
           List of Students
+          { loadStudentListPending ? <Loader active inline /> : '' }
         </Header>
         <Button.Group fluid>
           <Button onClick={() => this.props.history.goBack()}>Cancel</Button>

@@ -16,16 +16,15 @@ export class ModalNewStudent extends Component {
     this.props.actions.loadGenreList();
   }
 
-  handleClose = () => this.props.actions.closeModalNewStudent();
+  handleClose = () => {
+    this.props.actions.closeModalNewStudent();
+    this.props.actions.loadStudentList();
+  };
 
   submit = (values) => {
     // print the form values to the console
     console.log(values);
     this.props.actions.saveNewStudent(values);
-
-    if (this.props.student.saveNewStudentPending !== null) {
-      this.props.actions.loadStudentList();
-    }
   };
 
   render() {
