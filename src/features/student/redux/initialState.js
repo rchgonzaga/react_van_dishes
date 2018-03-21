@@ -9,7 +9,10 @@ const initialState = {
   loadGenreListPending: false,
   loadGenreListError: null,
   loadSchoolListPending: false,
-  loadSchoolListError: null
+  loadSchoolListError: null,
+  saveNewStudentPending: false,
+  saveNewStudentError: null,
+  userSaved: false
 };
 
 export default initialState;

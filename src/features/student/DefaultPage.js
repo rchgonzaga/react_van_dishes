@@ -18,10 +18,6 @@ export class DefaultPage extends Component {
     this.props.actions.loadSchoolList();
   }
 
-  handleNewStudent() {
-    alert('New Student');
-  }
-
   handleOpenNewStudentModal() {
     this.props.actions.showModalNewStudent();
   }
@@ -31,10 +27,14 @@ export class DefaultPage extends Component {
   }
 
   render() {
+
+    const { saveNewStudentPending, userSaved, saveNewStudentError} = this.props.student;
+
+    let msg = (saveNewStudentPending ? 'Saving student' : (userSaved === true && saveNewStudentError === null ? 'New Student' : 'Something went wrong :S'));
+
     return (
       <Container>
-        <ModalNewStudent title="New Student" />
-
+        <ModalNewStudent title={msg} />
         <Header as="h1" color="blue">
           List of Students
         </Header>

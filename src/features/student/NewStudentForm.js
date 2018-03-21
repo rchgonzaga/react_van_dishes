@@ -12,11 +12,27 @@ const validate = (values) => {
   if (!values.lastname) {
     errors.lastname = 'Last name is required';
   }
+
+  if (!values.internalcode) {
+    errors.internalcode = 'Internal code is required';
+  }
+
+  if (!values.score) {
+    errors.score = 'Internal code is required';
+  }
+
+  if (!values.cpfnumber) {
+    errors.cpfnumber = 'Internal code is required';
+  }
+
+  if (!values.rgnumber) {
+    errors.rgnumber = 'Internal code is required';
+  }
   return errors;
 };
 
 const NewStudentForm = (props) => {
-  const { handleSubmit, pristine, reset, submitting, cancelBtn, genreList } = props;
+  const { handleSubmit, pristine, reset, submitting, cancelBtn, genreList, schoolsList } = props;
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group>
@@ -24,22 +40,28 @@ const NewStudentForm = (props) => {
         <Field name="lastname" label="Last Name" component={InputField} placeholder="Last Name" width={6} />
         <Field
           component={SelectField}
-          name='choose'
-          label="Choose One"
+          name="genreId"
+          label="Genre"
           width={4}
           options={genreList}
-          onChange={(e, value) => {console.log(e, value);}}
-          placeholder="Choose One" />
+          placeholder="Choose One"
+        />
       </Form.Group>
       <Form.Group>
-        <Form.Input placeholder="2 Wide" width={2} />
-        <Form.Input placeholder="12 Wide" width={12} />
-        <Form.Input placeholder="2 Wide" width={2} />
+        <Field name="internalcode" label="Internal Core" component={InputField} placeholder="Internal Core" width={8} />
+        <Field
+          component={SelectField}
+          name="schoolId"
+          label="School"
+          width={8}
+          options={schoolsList}
+          placeholder="Choose One"
+        />
       </Form.Group>
       <Form.Group>
-        <Form.Input placeholder="8 Wide" width={8} />
-        <Form.Input placeholder="6 Wide" width={6} />
-        <Form.Input placeholder="2 Wide" width={2} />
+        <Field name="score" label="Score" component={InputField} placeholder="Score" width={6} />
+        <Field name="cpfnumber" label="Cpf Number" component={InputField} placeholder="Cpf Number" width={6} />
+        <Field name="rgnumber" label="Rg Number" component={InputField} placeholder="Rg Number" width={6} />
       </Form.Group>
 
       <Button disabled={submitting}>Submit</Button>

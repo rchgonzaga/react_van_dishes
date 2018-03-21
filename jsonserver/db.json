@@ -77,6 +77,60 @@
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
       "emails": "samininor@gmil.com;fulanw@ik.com;fivosvaldo@hotmail.com"
+    },
+    {
+      "firstname": "Jairson",
+      "lastname": "Alses",
+      "genreId": 1,
+      "internalcode": "126735",
+      "schoolId": 2,
+      "score": "6371",
+      "cpfnumber": "172361725837",
+      "rgnumber": "7772",
+      "id": 7
+    },
+    {
+      "firstname": "Mais",
+      "lastname": "Um",
+      "genreId": 2,
+      "internalcode": "172863",
+      "schoolId": 3,
+      "score": "3123",
+      "cpfnumber": "17238657",
+      "rgnumber": "977986",
+      "id": 8
+    },
+    {
+      "firstname": "Roskibe",
+      "lastname": "Agrale",
+      "genreId": 1,
+      "internalcode": "376",
+      "schoolId": 2,
+      "score": "331",
+      "cpfnumber": "17635",
+      "rgnumber": "2222",
+      "id": 9
+    },
+    {
+      "firstname": "AAA",
+      "lastname": "bbbb",
+      "genreId": 2,
+      "internalcode": "3131",
+      "score": "37",
+      "cpfnumber": "3178265",
+      "rgnumber": "765786576",
+      "id": 10
+    },
+    {
+      "firstname": "Cra",
+      "lastname": "Munhao",
+      "genreId": 2,
+      "internalcode": "368",
+      "schoolId": 3,
+      "score": "33",
+      "cpfnumber": "23917263",
+      "rgnumber": "98969867",
+      "id": 11
     }
   ],
   "comments": [
@@ -87,34 +141,43 @@
     }
   ],
   "genres": [
-          { 
-            "key": 1, 
-            "value": 1, 
-            "text": "Masculino"
-          },
-          { 
-            "key": 2, 
-            "value": 2, 
-            "text": "Feminino"
-          },
-          { 
-            "key": 3, 
-            "value": 3, 
-            "text": "Indefinido"
-          }
+    {
+      "id": 1,
+      "key": 1,
+      "value": 1,
+      "text": "Masculino"
+    },
+    {
+      "id": 2,
+      "key": 2,
+      "value": 2,
+      "text": "Feminino"
+    },
+    {
+      "id": 3,
+      "key": 3,
+      "value": 3,
+      "text": "Indefinido"
+    }
   ],
   "schools": [
     {
       "id": 1,
-      "name": "Fulanos School"
+      "key": 1,
+      "value": 1,
+      "text": "Fulanos School"
     },
     {
       "id": 2,
-      "name": "Praire School"
+      "key": 2,
+      "value": 2,
+      "text": "Praire School"
     },
     {
       "id": 3,
-      "name": "Mary one School"
+      "key": 3,
+      "value": 3,
+      "text": "Mary one School"
     }
   ]
 }

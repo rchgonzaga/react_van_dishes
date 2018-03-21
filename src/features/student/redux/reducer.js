@@ -4,6 +4,7 @@ import { reducer as showModalNewStudentReducer } from './showModalNewStudent';
 import { reducer as closeModalNewStudentReducer } from './closeModalNewStudent';
 import { reducer as loadGenreListReducer } from './loadGenreList';
 import { reducer as loadSchoolListReducer } from './loadSchoolList';
+import { reducer as saveNewStudentReducer } from './saveNewStudent';
 
 const reducers = [
   loadStudentListReducer,
@@ -11,6 +12,7 @@ const reducers = [
   closeModalNewStudentReducer,
   loadGenreListReducer,
   loadSchoolListReducer,
+  saveNewStudentReducer,
 ];
 
 export default function reducer(state = initialState, action) {
