@@ -15,6 +15,7 @@ export class DefaultPage extends Component {
 
   componentDidMount() {
     this.props.actions.loadStudentList();
+    this.props.actions.loadSchoolList();
   }
 
   handleNewStudent() {

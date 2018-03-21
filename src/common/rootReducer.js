@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
+import { reducer as formReducer } from 'redux-form';
 import homeReducer from '../features/home/redux/reducer';
 import commonReducer from '../features/common/redux/reducer';
 import studentReducer from '../features/student/redux/reducer';
@@ -10,6 +11,7 @@ import studentReducer from '../features/student/redux/reducer';
 // So that it's easy for others to understand it and Rekit could manage theme.
 
 const reducerMap = {
+  form: formReducer,
   router: routerReducer,
   home: homeReducer,
   common: commonReducer,

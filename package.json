@@ -81,6 +81,7 @@
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
+    "react-semantic-redux-form": "^1.2.6",
     "redux-form": "^7.3.0",
     "semantic-ui-css": "^2.3.0",
     "semantic-ui-react": "^0.78.3"

@@ -4,37 +4,79 @@
       "id": 1,
       "firstname": "Rafael",
       "lastname": "Gonzaga",
-      "image": ""
+      "image": "",
+      "internalcode": 12783,
+      "genreId": 1,
+      "schoolId": 3,
+      "score": 331,
+      "cpfnumber": "331.222.312-22",
+      "rgnumber": "31.231.122-33",
+      "emails": "samininor@gmil.com;fulanw@ik.com;fivosvaldo@hotmail.com"
     },
     {
       "id": 2,
       "firstname": "Jao",
       "lastname": "Flowers",
-      "image": ""
+      "image": "",
+      "internalcode": 12783,
+      "genreId": 1,
+      "schoolId": 3,
+      "score": 331,
+      "cpfnumber": "331.222.312-22",
+      "rgnumber": "31.231.122-33",
+      "emails": "samininor@gmil.com;fulanw@ik.com;fivosvaldo@hotmail.com"
     },
     {
       "id": 3,
       "firstname": "Osmir",
       "lastname": "Tadela",
-      "image": ""
+      "image": "",
+      "internalcode": 12783,
+      "genreId": 1,
+      "schoolId": 3,
+      "score": 331,
+      "cpfnumber": "331.222.312-22",
+      "rgnumber": "31.231.122-33",
+      "emails": "samininor@gmil.com;fulanw@ik.com;fivosvaldo@hotmail.com"
     },
     {
       "id": 4,
       "firstname": "Marra",
       "lastname": "Paiz",
-      "image": ""
+      "image": "",
+      "internalcode": 12783,
+      "genreId": 1,
+      "schoolId": 3,
+      "score": 331,
+      "cpfnumber": "331.222.312-22",
+      "rgnumber": "31.231.122-33",
+      "emails": "samininor@gmil.com;fulanw@ik.com;fivosvaldo@hotmail.com"
     },
     {
       "id": 5,
       "firstname": "Urrs",
       "lastname": "Minhinho",
-      "image": ""
+      "image": "",
+      "internalcode": 12783,
+      "genreId": 1,
+      "schoolId": 3,
+      "score": 331,
+      "cpfnumber": "331.222.312-22",
+      "rgnumber": "31.231.122-33",
+      "emails": "samininor@gmil.com;fulanw@ik.com;fivosvaldo@hotmail.com"
     },
     {
       "id": 6,
       "firstname": "Sá",
       "lastname": "Minhinho",
-      "image": ""
+      "image": "",
+      "internalcode": 12783,
+      "genreId": 1,
+      "schoolId": 3,
+      "score": 331,
+      "cpfnumber": "331.222.312-22",
+      "rgnumber": "31.231.122-33",
+      "emails": "samininor@gmil.com;fulanw@ik.com;fivosvaldo@hotmail.com"
     }
   ],
   "comments": [
@@ -44,7 +86,35 @@
       "postId": 1
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "genres": [
+          { 
+            "key": 1, 
+            "value": 1, 
+            "text": "Masculino"
+          },
+          { 
+            "key": 2, 
+            "value": 2, 
+            "text": "Feminino"
+          },
+          { 
+            "key": 3, 
+            "value": 3, 
+            "text": "Indefinido"
+          }
+  ],
+  "schools": [
+    {
+      "id": 1,
+      "name": "Fulanos School"
+    },
+    {
+      "id": 2,
+      "name": "Praire School"
+    },
+    {
+      "id": 3,
+      "name": "Mary one School"
+    }
+  ]
 }

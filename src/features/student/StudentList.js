@@ -22,7 +22,7 @@ export class StudentList extends Component {
                 <Image src="http://www.scottshotelkillarney.com/files/hotel/hotel-a/03-dining/food-guiness2.jpg" />
                 <Card.Content>
                   <Card.Header>
-                    <Link to={`/restaurant/${item.id}`}>{item.firstname}</Link>
+                    <Link to={`/student/${item.id}`}>{item.firstname}</Link>
                   </Card.Header>
                 </Card.Content>
               </Card>
