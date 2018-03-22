@@ -11,7 +11,16 @@
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
-      "emails": "samininor@gmil.com;fulanw@ik.com;fivosvaldo@hotmail.com"
+      "emails": [
+        {"id": 1, "email": "samininor@gmil.com"},
+        {"id": 2, "email": "samininor@gmil.com"},
+        {"id": 3, "email": "samininor@gmil.com"},
+        {"id": 4, "email": "samininor@gmil.com"}
+      ],
+      "genre": {
+        "id": 1,
+        "descr": "Masculino"
+      }
     },
     {
       "id": 2,
@@ -24,7 +33,16 @@
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
-      "emails": "samininor@gmil.com;fulanw@ik.com;fivosvaldo@hotmail.com"
+      "emails": [
+        {"id": 1, "email": "samininor@gmil.com"},
+        {"id": 2, "email": "samininor@gmil.com"},
+        {"id": 3, "email": "samininor@gmil.com"},
+        {"id": 4, "email": "samininor@gmil.com"}
+      ],
+      "genre": {
+        "id": 1,
+        "descr": "Masculino"
+      }
     },
     {
       "id": 3,
@@ -37,7 +55,16 @@
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
-      "emails": "samininor@gmil.com;fulanw@ik.com;fivosvaldo@hotmail.com"
+      "emails": [
+        {"id": 1, "email": "samininor@gmil.com"},
+        {"id": 2, "email": "samininor@gmil.com"},
+        {"id": 3, "email": "samininor@gmil.com"},
+        {"id": 4, "email": "samininor@gmil.com"}
+      ],
+      "genre": {
+        "id": 1,
+        "descr": "Masculino"
+      }
     },
     {
       "id": 4,
@@ -50,7 +77,16 @@
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
-      "emails": "samininor@gmil.com;fulanw@ik.com;fivosvaldo@hotmail.com"
+      "emails": [
+        {"id": 1, "email": "samininor@gmil.com"},
+        {"id": 2, "email": "samininor@gmil.com"},
+        {"id": 3, "email": "samininor@gmil.com"},
+        {"id": 4, "email": "samininor@gmil.com"}
+      ],
+      "genre": {
+        "id": 1,
+        "descr": "Masculino"
+      }
     },
     {
       "id": 5,
@@ -63,7 +99,16 @@
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
-      "emails": "samininor@gmil.com;fulanw@ik.com;fivosvaldo@hotmail.com"
+      "emails": [
+        {"id": 1, "email": "samininor@gmil.com"},
+        {"id": 2, "email": "samininor@gmil.com"},
+        {"id": 3, "email": "samininor@gmil.com"},
+        {"id": 4, "email": "samininor@gmil.com"}
+      ],
+      "genre": {
+        "id": 1,
+        "descr": "Masculino"
+      }
     },
     {
       "id": 6,
@@ -76,7 +121,16 @@
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
-      "emails": "samininor@gmil.com;fulanw@ik.com;fivosvaldo@hotmail.com"
+      "emails": [
+        {"id": 1, "email": "samininor@gmil.com"},
+        {"id": 2, "email": "samininor@gmil.com"},
+        {"id": 3, "email": "samininor@gmil.com"},
+        {"id": 4, "email": "samininor@gmil.com"}
+      ],
+      "genre": {
+        "id": 1,
+        "descr": "Masculino"
+      }
     },
     {
       "firstname": "Jairson",
@@ -88,6 +142,16 @@
       "score": "6371",
       "cpfnumber": "172361725837",
       "rgnumber": "7772",
+      "emails": [
+        {"id": 1, "email": "samininor@gmil.com"},
+        {"id": 2, "email": "samininor@gmil.com"},
+        {"id": 3, "email": "samininor@gmil.com"},
+        {"id": 4, "email": "samininor@gmil.com"}
+      ],
+      "genre": {
+        "id": 1,
+        "descr": "Masculino"
+      },
       "id": 7
     },
     {
@@ -100,6 +164,16 @@
       "score": "3123",
       "cpfnumber": "17238657",
       "rgnumber": "977986",
+      "emails": [
+        {"id": 1, "email": "samininor@gmil.com"},
+        {"id": 2, "email": "samininor@gmil.com"},
+        {"id": 3, "email": "samininor@gmil.com"},
+        {"id": 4, "email": "samininor@gmil.com"}
+      ],
+      "genre": {
+        "id": 1,
+        "descr": "Masculino"
+      },
       "id": 8
     },
     {
@@ -112,7 +186,13 @@
       "score": "331",
       "cpfnumber": "17635",
       "rgnumber": "2222",
-      "id": 9
+      "id": 9,
+      "emails": [
+        {"id": 1, "email": "samininor@gmil.com"},
+        {"id": 2, "email": "samininor@gmil.com"},
+        {"id": 3, "email": "samininor@gmil.com"},
+        {"id": 4, "email": "samininor@gmil.com"}
+      ]
     },
     {
       "firstname": "AAA",
@@ -123,6 +203,16 @@
       "score": "37",
       "cpfnumber": "3178265",
       "rgnumber": "765786576",
+      "genre": {
+        "id": 1,
+        "descr": "Masculino"
+      },
+      "emails": [
+        {"id": 1, "email": "samininor@gmil.com"},
+        {"id": 2, "email": "samininor@gmil.com"},
+        {"id": 3, "email": "samininor@gmil.com"},
+        {"id": 4, "email": "samininor@gmil.com"}
+      ],
       "id": 10
     },
     {
@@ -135,7 +225,23 @@
       "score": "33",
       "cpfnumber": "23917263",
       "rgnumber": "98969867",
-      "id": 11
+      "genre": {
+        "id": 1,
+        "descr": "Masculino"
+      },
+      "emails": [
+        {"id": 1, "email": "samininor@gmil.com"},
+        {"id": 2, "email": "samininor@gmil.com"},
+        {"id": 3, "email": "samininor@gmil.com"},
+        {"id": 4, "email": "samininor@gmil.com"}
+      ],
+      "id": 11,
+      "emails": [
+        {"id": 1, "email": "samininor@gmil.com"},
+        {"id": 2, "email": "samininor@gmil.com"},
+        {"id": 3, "email": "samininor@gmil.com"},
+        {"id": 4, "email": "samininor@gmil.com"}
+      ]
     },
     {
       "firstname": "Jasd",
@@ -146,7 +252,17 @@
       "score": "31",
       "cpfnumber": "123127538",
       "rgnumber": "8757",
-      "id": 12
+      "genre": {
+        "id": 1,
+        "descr": "Masculino"
+      },
+      "id": 12,
+      "emails": [
+        {"id": 1, "email": "samininor@gmil.com"},
+        {"id": 2, "email": "samininor@gmil.com"},
+        {"id": 3, "email": "samininor@gmil.com"},
+        {"id": 4, "email": "samininor@gmil.com"}
+      ]
     }
   ],
   "studentAddress": [
@@ -183,6 +299,11 @@
   ],
   "studentGenres": [
     {
+      "id": null,
+      "studentId": null,
+      "descr": ""
+    },
+    {
       "id": 1,
       "studentId": 1,
       "descr": "Masculino"
@@ -212,6 +333,12 @@
 
 
   "genre": [
+    {
+      "id": null,
+      "key": null,
+      "value": null,
+      "text": ""
+    },
     {
       "id": 1,
       "key": 1,

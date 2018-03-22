@@ -4,8 +4,8 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Container, Header, Button, Divider, Loader } from 'semantic-ui-react';
 import * as actions from './redux/actions';
-import StudentList from './StudentList';
-import ModalNewStudent from './ModalNewStudent';
+import StudentList from './components/StudentList';
+import ModalNewStudent from './components/ModalNewStudent';
 
 export class DefaultPage extends Component {
   static propTypes = {

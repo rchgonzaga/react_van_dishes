@@ -4,3 +4,4 @@ export { closeModalNewStudent } from './closeModalNewStudent';
 export { loadGenreList, dismissLoadGenreListError } from './loadGenreList';
 export { loadSchoolList, dismissLoadSchoolListError } from './loadSchoolList';
 export { saveNewStudent, dismissSaveNewStudentError } from './saveNewStudent';
+export { selectStudent } from './selectStudent';

@@ -6,7 +6,7 @@ import {
   STUDENT_LOAD_GENRE_LIST_DISMISS_ERROR,
 } from './constants';
 
-const apiUrl = 'http://localhost:3000/genres/';
+const apiUrl = 'http://localhost:3000/genre/';
 
 export function loadGenreList(args = {}) {
   return (dispatch) => {

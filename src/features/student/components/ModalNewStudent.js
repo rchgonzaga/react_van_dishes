@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Modal, Button, Header, Icon, Tab, Container } from 'semantic-ui-react';
-import * as actions from './redux/actions';
+import * as actions from '../redux/actions';
 import NewStudentForm from './NewStudentForm';
 
 export class ModalNewStudent extends Component {
@@ -29,7 +29,7 @@ export class ModalNewStudent extends Component {
 
   render() {
     return (
-      <Modal open={this.props.student.modalNewUserVisible} size="fullscreen" closeIcon>
+      <Modal open={this.props.student.modalNewUserVisible} size="fullscreen">
         <Header icon="browser" content={this.props.title} />
         <Modal.Content scrolling>
           <NewStudentForm

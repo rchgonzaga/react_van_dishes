@@ -15,7 +15,6 @@ export function loadSchoolList(args = {}) {
     });
 
     return new Promise((resolve, reject) => {
-
       axios.get(apiUrl).then(
         (res) => {
           dispatch({
@@ -61,7 +60,7 @@ export function reducer(state, action) {
         ...state,
         loadSchoolListPending: false,
         loadSchoolListError: null,
-        schoolsList: action.data
+        schoolsList: action.data,
       };
 
     case STUDENT_LOAD_SCHOOL_LIST_FAILURE:

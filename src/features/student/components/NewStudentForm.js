@@ -1,7 +1,9 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
+import { connect } from 'react-redux';
 import { Form, Button, Tab, Table, Icon, Checkbox } from 'semantic-ui-react';
-import { InputField, SelectField } from './SemanticUiReduxForm';
+import { InputField, SelectField } from '../SemanticUiReduxForm';
+import { selectStudent} from '../redux/selectStudent';
 
 const validate = (values) => {
   const errors = {};
@@ -33,7 +35,7 @@ const validate = (values) => {
 
 const panes = [
   {
-    menuItem: 'Tab 1',
+    menuItem: 'Adresses',
     render: () => (
       <Tab.Pane>
         <Table compact celled definition>
@@ -77,13 +79,16 @@ const panes = [
       </Tab.Pane>
     ),
   },
-  { menuItem: 'Tab 2', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
-  { menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+  { menuItem: 'Phones', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
+  { menuItem: 'People', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+  { menuItem: 'Finance', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+  { menuItem: 'Products', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+  { menuItem: 'Contacs', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
 ];
 
 const TabExampleBasic = () => <Tab panes={panes} />;
 
-const NewStudentForm = (props) => {
+let NewStudentForm = (props) => {
   const { handleSubmit, pristine, reset, submitting, cancelBtn, genreList, schoolsList } = props;
   return (
     <Form onSubmit={handleSubmit}>
@@ -126,7 +131,18 @@ const NewStudentForm = (props) => {
   );
 };
 
-export default reduxForm({
+// Decorate with reduxForm(). It will read the initialValues prop provided by connect()
+NewStudentForm = reduxForm({
   form: 'syncValidation', // a unique identifier for this form
   validate, // <--- validation function given to redux-form
 })(NewStudentForm);
+
+// You have to connect() to any reducers that you wish to connect to yourself
+NewStudentForm = connect(
+  state => ({
+    initialValues: state.student.selectedStudent // pull initial values from account reducer
+  }),
+  { load: selectStudent } // bind account loading action creator
+)(NewStudentForm);
+
+export default NewStudentForm;
