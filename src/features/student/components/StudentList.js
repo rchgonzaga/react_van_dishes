@@ -3,6 +3,7 @@ import _ from 'lodash';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { reset } from 'redux-form';
 import { Card, Image, Container, List, Divider } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import * as actions from '../redux/actions';
@@ -16,7 +17,7 @@ export class StudentList extends Component {
   handleChange = (e, { name, value }) => this.setState({ [name]: value });
 
   handleClick(student) {
-    console.log(student);
+    console.log(this);
     this.props.actions.selectStudent(student);
     this.props.actions.showModalNewStudent();
   }

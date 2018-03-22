@@ -20,20 +20,13 @@ export class ModalNewStudent extends Component {
     this.props.actions.closeModalNewStudent();
     this.props.actions.loadStudentList();
   };
-
-  submit = (values) => {
-    // print the form values to the console
-    console.log(values);
-    this.props.actions.saveNewStudent(values);
-  };
-
+  
   render() {
     return (
       <Modal open={this.props.student.modalNewUserVisible} size="fullscreen">
         <Header icon="browser" content={this.props.title} />
         <Modal.Content scrolling>
           <NewStudentForm
-            onSubmit={this.submit}
             genreList={this.props.student.genreList}
             schoolsList={this.props.student.schoolsList}
             cancelBtn={

@@ -88,8 +88,16 @@ const panes = [
 
 const TabExampleBasic = () => <Tab panes={panes} />;
 
+const handleSubmit = (values) => {
+  // print the form values to the console
+  console.log(values);
+  this.props.actions.saveNewStudent(values);
+  this.props.resetForm();
+};
+
+
 let NewStudentForm = (props) => {
-  const { handleSubmit, pristine, reset, submitting, cancelBtn, genreList, schoolsList } = props;
+  const { pristine, reset, submitting, cancelBtn, genreList, schoolsList } = props;
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group>
@@ -133,8 +141,8 @@ let NewStudentForm = (props) => {
 
 // Decorate with reduxForm(). It will read the initialValues prop provided by connect()
 NewStudentForm = reduxForm({
-  form: 'syncValidation', // a unique identifier for this form
-  validate, // <--- validation function given to redux-form
+  form: 'newStudentForm',
+  validate,
 })(NewStudentForm);
 
 // You have to connect() to any reducers that you wish to connect to yourself
