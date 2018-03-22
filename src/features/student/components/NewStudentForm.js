@@ -3,7 +3,7 @@ import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import { Form, Button, Tab, Table, Icon, Checkbox } from 'semantic-ui-react';
 import { InputField, SelectField } from '../SemanticUiReduxForm';
-import { selectStudent} from '../redux/selectStudent';
+import { selectStudent } from '../redux/selectStudent';
 
 const validate = (values) => {
   const errors = {};

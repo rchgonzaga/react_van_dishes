@@ -19,8 +19,9 @@ export class ModalNewStudent extends Component {
   handleClose = () => {
     this.props.actions.closeModalNewStudent();
     this.props.actions.loadStudentList();
+    this.props.actions.unselectStudent();
   };
-  
+
   render() {
     return (
       <Modal open={this.props.student.modalNewUserVisible} size="fullscreen">
