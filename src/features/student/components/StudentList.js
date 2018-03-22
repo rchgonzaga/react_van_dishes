@@ -14,10 +14,7 @@ export class StudentList extends Component {
     actions: PropTypes.object.isRequired,
   };
 
-  handleChange = (e, { name, value }) => this.setState({ [name]: value });
-
   handleClick(student) {
-    console.log(this);
     this.props.actions.selectStudent(student);
     this.props.actions.showModalNewStudent();
   }

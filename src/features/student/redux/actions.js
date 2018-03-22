@@ -6,3 +6,4 @@ export { loadSchoolList, dismissLoadSchoolListError } from './loadSchoolList';
 export { saveNewStudent, dismissSaveNewStudentError } from './saveNewStudent';
 export { selectStudent } from './selectStudent';
 export { unselectStudent } from './unselectStudent';
+export { updateStudent, dismissUpdateStudentError } from './updateStudent';

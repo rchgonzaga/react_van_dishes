@@ -12,7 +12,9 @@ const initialState = {
   loadSchoolListError: null,
   saveNewStudentPending: false,
   saveNewStudentError: null,
-  userSaved: false
+  userSaved: false,
+  updateStudentPending: false,
+  updateStudentError: null
 };
 
 export default initialState;

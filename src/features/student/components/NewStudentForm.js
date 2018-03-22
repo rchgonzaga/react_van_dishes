@@ -88,16 +88,8 @@ const panes = [
 
 const TabExampleBasic = () => <Tab panes={panes} />;
 
-const handleSubmit = (values) => {
-  // print the form values to the console
-  console.log(values);
-  this.props.actions.saveNewStudent(values);
-  this.props.resetForm();
-};
-
-
 let NewStudentForm = (props) => {
-  const { pristine, reset, submitting, cancelBtn, genreList, schoolsList } = props;
+  const { handleSubmit, pristine, reset, submitting, cancelBtn, genreList, schoolsList } = props;
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group>

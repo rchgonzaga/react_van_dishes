@@ -12,10 +12,22 @@
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
       "emails": [
-        {"id": 1, "email": "samininor@gmil.com"},
-        {"id": 2, "email": "samininor@gmil.com"},
-        {"id": 3, "email": "samininor@gmil.com"},
-        {"id": 4, "email": "samininor@gmil.com"}
+        {
+          "id": 1,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 2,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 3,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 4,
+          "email": "samininor@gmil.com"
+        }
       ],
       "genre": {
         "id": 1,
@@ -24,7 +36,7 @@
     },
     {
       "id": 2,
-      "firstname": "Jao",
+      "firstname": "Jaos",
       "lastname": "Flowers",
       "image": "https://d33wubrfki0l68.cloudfront.net/20b4ff83e62aaee6fc12fc1d06ad047197ef2876/72667/apple-touch-icon.png",
       "internalcode": 12783,
@@ -34,10 +46,22 @@
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
       "emails": [
-        {"id": 1, "email": "samininor@gmil.com"},
-        {"id": 2, "email": "samininor@gmil.com"},
-        {"id": 3, "email": "samininor@gmil.com"},
-        {"id": 4, "email": "samininor@gmil.com"}
+        {
+          "id": 1,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 2,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 3,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 4,
+          "email": "samininor@gmil.com"
+        }
       ],
       "genre": {
         "id": 1,
@@ -56,10 +80,22 @@
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
       "emails": [
-        {"id": 1, "email": "samininor@gmil.com"},
-        {"id": 2, "email": "samininor@gmil.com"},
-        {"id": 3, "email": "samininor@gmil.com"},
-        {"id": 4, "email": "samininor@gmil.com"}
+        {
+          "id": 1,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 2,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 3,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 4,
+          "email": "samininor@gmil.com"
+        }
       ],
       "genre": {
         "id": 1,
@@ -68,7 +104,7 @@
     },
     {
       "id": 4,
-      "firstname": "Marra",
+      "firstname": "Marras",
       "lastname": "Paiz",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0b1-O4HLvkk9CGO8KnpXf5srIwn7soX4a8dgV5Euy1Pxo1E8XTA",
       "internalcode": 12783,
@@ -78,10 +114,22 @@
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
       "emails": [
-        {"id": 1, "email": "samininor@gmil.com"},
-        {"id": 2, "email": "samininor@gmil.com"},
-        {"id": 3, "email": "samininor@gmil.com"},
-        {"id": 4, "email": "samininor@gmil.com"}
+        {
+          "id": 1,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 2,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 3,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 4,
+          "email": "samininor@gmil.com"
+        }
       ],
       "genre": {
         "id": 1,
@@ -100,10 +148,22 @@
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
       "emails": [
-        {"id": 1, "email": "samininor@gmil.com"},
-        {"id": 2, "email": "samininor@gmil.com"},
-        {"id": 3, "email": "samininor@gmil.com"},
-        {"id": 4, "email": "samininor@gmil.com"}
+        {
+          "id": 1,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 2,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 3,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 4,
+          "email": "samininor@gmil.com"
+        }
       ],
       "genre": {
         "id": 1,
@@ -122,10 +182,22 @@
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
       "emails": [
-        {"id": 1, "email": "samininor@gmil.com"},
-        {"id": 2, "email": "samininor@gmil.com"},
-        {"id": 3, "email": "samininor@gmil.com"},
-        {"id": 4, "email": "samininor@gmil.com"}
+        {
+          "id": 1,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 2,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 3,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 4,
+          "email": "samininor@gmil.com"
+        }
       ],
       "genre": {
         "id": 1,
@@ -143,10 +215,22 @@
       "cpfnumber": "172361725837",
       "rgnumber": "7772",
       "emails": [
-        {"id": 1, "email": "samininor@gmil.com"},
-        {"id": 2, "email": "samininor@gmil.com"},
-        {"id": 3, "email": "samininor@gmil.com"},
-        {"id": 4, "email": "samininor@gmil.com"}
+        {
+          "id": 1,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 2,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 3,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 4,
+          "email": "samininor@gmil.com"
+        }
       ],
       "genre": {
         "id": 1,
@@ -165,10 +249,22 @@
       "cpfnumber": "17238657",
       "rgnumber": "977986",
       "emails": [
-        {"id": 1, "email": "samininor@gmil.com"},
-        {"id": 2, "email": "samininor@gmil.com"},
-        {"id": 3, "email": "samininor@gmil.com"},
-        {"id": 4, "email": "samininor@gmil.com"}
+        {
+          "id": 1,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 2,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 3,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 4,
+          "email": "samininor@gmil.com"
+        }
       ],
       "genre": {
         "id": 1,
@@ -188,10 +284,22 @@
       "rgnumber": "2222",
       "id": 9,
       "emails": [
-        {"id": 1, "email": "samininor@gmil.com"},
-        {"id": 2, "email": "samininor@gmil.com"},
-        {"id": 3, "email": "samininor@gmil.com"},
-        {"id": 4, "email": "samininor@gmil.com"}
+        {
+          "id": 1,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 2,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 3,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 4,
+          "email": "samininor@gmil.com"
+        }
       ]
     },
     {
@@ -208,10 +316,22 @@
         "descr": "Masculino"
       },
       "emails": [
-        {"id": 1, "email": "samininor@gmil.com"},
-        {"id": 2, "email": "samininor@gmil.com"},
-        {"id": 3, "email": "samininor@gmil.com"},
-        {"id": 4, "email": "samininor@gmil.com"}
+        {
+          "id": 1,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 2,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 3,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 4,
+          "email": "samininor@gmil.com"
+        }
       ],
       "id": 10
     },
@@ -230,18 +350,24 @@
         "descr": "Masculino"
       },
       "emails": [
-        {"id": 1, "email": "samininor@gmil.com"},
-        {"id": 2, "email": "samininor@gmil.com"},
-        {"id": 3, "email": "samininor@gmil.com"},
-        {"id": 4, "email": "samininor@gmil.com"}
+        {
+          "id": 1,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 2,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 3,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 4,
+          "email": "samininor@gmil.com"
+        }
       ],
-      "id": 11,
-      "emails": [
-        {"id": 1, "email": "samininor@gmil.com"},
-        {"id": 2, "email": "samininor@gmil.com"},
-        {"id": 3, "email": "samininor@gmil.com"},
-        {"id": 4, "email": "samininor@gmil.com"}
-      ]
+      "id": 11
     },
     {
       "firstname": "Jasd",
@@ -258,10 +384,51 @@
       },
       "id": 12,
       "emails": [
-        {"id": 1, "email": "samininor@gmil.com"},
-        {"id": 2, "email": "samininor@gmil.com"},
-        {"id": 3, "email": "samininor@gmil.com"},
-        {"id": 4, "email": "samininor@gmil.com"}
+        {
+          "id": 1,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 2,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 3,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 4,
+          "email": "samininor@gmil.com"
+        }
+      ]
+    },
+    {
+      "firstname": "Fuleine",
+      "lastname": "De Tal",
+      "genreId": 2,
+      "internalcode": "7733",
+      "schoolId": 3,
+      "score": "773",
+      "cpfnumber": "1982673.312",
+      "rgnumber": "1896531",
+      "id": 13,
+      "emails": [
+        {
+          "id": 1,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 2,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 3,
+          "email": "samininor@gmil.com"
+        },
+        {
+          "id": 4,
+          "email": "samininor@gmil.com"
+        }
       ]
     }
   ],
@@ -319,19 +486,6 @@
       "descr": "Indefinido"
     }
   ],
-
-
-
-
-
-
-
-
-
-
-
-
-
   "genre": [
     {
       "id": null,

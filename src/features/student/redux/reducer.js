@@ -7,6 +7,7 @@ import { reducer as loadSchoolListReducer } from './loadSchoolList';
 import { reducer as saveNewStudentReducer } from './saveNewStudent';
 import { reducer as selectStudentReducer } from './selectStudent';
 import { reducer as unselectStudentReducer } from './unselectStudent';
+import { reducer as updateStudentReducer } from './updateStudent';
 
 const reducers = [
   loadStudentListReducer,
@@ -17,6 +18,7 @@ const reducers = [
   saveNewStudentReducer,
   selectStudentReducer,
   unselectStudentReducer,
+  updateStudentReducer,
 ];
 
 export default function reducer(state = initialState, action) {
