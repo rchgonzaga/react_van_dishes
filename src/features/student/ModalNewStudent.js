@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Modal, Button, Header, Icon } from 'semantic-ui-react';
+import { Modal, Button, Header, Icon, Tab, Container } from 'semantic-ui-react';
 import * as actions from './redux/actions';
 import NewStudentForm from './NewStudentForm';
 
