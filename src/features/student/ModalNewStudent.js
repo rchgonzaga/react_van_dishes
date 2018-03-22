@@ -29,7 +29,7 @@ export class ModalNewStudent extends Component {
 
   render() {
     return (
-      <Modal open={this.props.student.modalNewUserVisible} size="fullscreen">
+      <Modal open={this.props.student.modalNewUserVisible} size="fullscreen" closeIcon>
         <Header icon="browser" content={this.props.title} />
         <Modal.Content scrolling>
           <NewStudentForm

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Card, Image, Container, TransitionablePortal, Segment, Header } from 'semantic-ui-react';
+import { Card, Image, Container } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import * as actions from './redux/actions';
 
@@ -45,8 +45,7 @@ export class StudentList extends Component {
   handleClick = () => this.setState({ open: !this.state.open });
 
   render() {
-
-    const { animation, duration, open } = this.state
+    const { animation, duration, open } = this.state;
 
     return (
       <Container textAlign="left">
@@ -54,18 +53,19 @@ export class StudentList extends Component {
           {this.props.student.studentList.length > 0 ? (
             this.props.student.studentList.map(item => (
               <Card key={item.id} onClick={this.handleClick}>
-                <TransitionablePortal open={open} transition={{ animation, duration }}>
-                  <Segment style={{ left: '40%', position: 'fixed', top: '50%', zIndex: 1000 }}>
-                    <Header>This is a controlled portal</Header>
-                    <p>Portals have tons of great callback functions to hook into.</p>
-                    <p>To close, simply click the close button or click away</p>
-                  </Segment>
-                </TransitionablePortal>
-                <Image src="http://www.scottshotelkillarney.com/files/hotel/hotel-a/03-dining/food-guiness2.jpg" />
                 <Card.Content>
+                  <Image
+                    floated="right"
+                    size="mini"
+                    src={item.image}
+                  />
                   <Card.Header>
                     <Link to={`/student/${item.id}`}>{item.firstname}</Link>
                   </Card.Header>
+                  <Card.Meta>{item.firstname} {item.lastname}</Card.Meta>
+                  <Card.Description>
+                    {item.cpfnumber} <strong>{item.emails}</strong>
+                  </Card.Description>
                 </Card.Content>
               </Card>
             ))

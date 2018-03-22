@@ -4,10 +4,10 @@
       "id": 1,
       "firstname": "Rafael",
       "lastname": "Gonzaga",
-      "image": "",
+      "image": "https://relayfm.s3.amazonaws.com/uploads/user/avatar/4/user_avatar_mykehurley_artwork.png",
       "internalcode": 12783,
-      "genreId": 1,
-      "schoolId": 3,
+      "genresId": 1,
+      "schoolsId": 3,
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
@@ -17,10 +17,10 @@
       "id": 2,
       "firstname": "Jao",
       "lastname": "Flowers",
-      "image": "",
+      "image": "https://d33wubrfki0l68.cloudfront.net/20b4ff83e62aaee6fc12fc1d06ad047197ef2876/72667/apple-touch-icon.png",
       "internalcode": 12783,
-      "genreId": 1,
-      "schoolId": 3,
+      "genresId": 1,
+      "schoolsId": 3,
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
@@ -30,10 +30,10 @@
       "id": 3,
       "firstname": "Osmir",
       "lastname": "Tadela",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVDfzabJUj-8aOpuiRQ0WuC1KvwyPz_yTeKPrxHpL2eaQUtOsX",
       "internalcode": 12783,
-      "genreId": 1,
-      "schoolId": 3,
+      "genresId": 1,
+      "schoolsId": 3,
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
@@ -43,10 +43,10 @@
       "id": 4,
       "firstname": "Marra",
       "lastname": "Paiz",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0b1-O4HLvkk9CGO8KnpXf5srIwn7soX4a8dgV5Euy1Pxo1E8XTA",
       "internalcode": 12783,
-      "genreId": 1,
-      "schoolId": 3,
+      "genresId": 1,
+      "schoolsId": 3,
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
@@ -56,10 +56,10 @@
       "id": 5,
       "firstname": "Urrs",
       "lastname": "Minhinho",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53gp62I0UvFNHBm3FN7RGeJdQkGvG6ctvomV-ldTwqHIKskr8",
       "internalcode": 12783,
-      "genreId": 1,
-      "schoolId": 3,
+      "genresId": 1,
+      "schoolsId": 3,
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
@@ -69,10 +69,10 @@
       "id": 6,
       "firstname": "Sá",
       "lastname": "Minhinho",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEdQ-pEfpfawifYLmkLbUkx4ljSH-ybz0Yf7Z9Fr-s2DVK6Jt",
       "internalcode": 12783,
-      "genreId": 1,
-      "schoolId": 3,
+      "genresId": 1,
+      "schoolsId": 3,
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
@@ -81,9 +81,10 @@
     {
       "firstname": "Jairson",
       "lastname": "Alses",
-      "genreId": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT16dEwHh_EsTxZD9KK5GIxoq6Z8YzJK5jCkE1fAQcduIXNDp59",
+      "genresId": 1,
       "internalcode": "126735",
-      "schoolId": 2,
+      "schoolsId": 2,
       "score": "6371",
       "cpfnumber": "172361725837",
       "rgnumber": "7772",
@@ -92,9 +93,10 @@
     {
       "firstname": "Mais",
       "lastname": "Um",
-      "genreId": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXfIINMlPztus2X78wH-pU3KMzFGFhbzD95YwgrZU-LgL6MYZZw",
+      "genresId": 2,
       "internalcode": "172863",
-      "schoolId": 3,
+      "schoolsId": 3,
       "score": "3123",
       "cpfnumber": "17238657",
       "rgnumber": "977986",
@@ -103,9 +105,10 @@
     {
       "firstname": "Roskibe",
       "lastname": "Agrale",
-      "genreId": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiczFscIHoIQChDf8a87tlof5V5R__EFMPVKsyiDOzX125n0oLyQ",
+      "genresId": 1,
       "internalcode": "376",
-      "schoolId": 2,
+      "schoolsId": 2,
       "score": "331",
       "cpfnumber": "17635",
       "rgnumber": "2222",
@@ -114,7 +117,8 @@
     {
       "firstname": "AAA",
       "lastname": "bbbb",
-      "genreId": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn4tI620rfQKtZOVJUtMLFs2k1FxONi5oTsLGY8rBJVctyiMYjvw",
+      "genresId": 2,
       "internalcode": "3131",
       "score": "37",
       "cpfnumber": "3178265",
@@ -124,9 +128,10 @@
     {
       "firstname": "Cra",
       "lastname": "Munhao",
-      "genreId": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT66er2B6hTQjL7iXJNBllPKHFKRsnGpX31JxtE1TKDs6otc19E",
+      "genresId": 2,
       "internalcode": "368",
-      "schoolId": 3,
+      "schoolsId": 3,
       "score": "33",
       "cpfnumber": "23917263",
       "rgnumber": "98969867",
@@ -135,7 +140,8 @@
     {
       "firstname": "Jasd",
       "lastname": "askjdhas",
-      "genreId": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsONaXV-8yBf-F9nNWPaUI67YA2k0-ks1fGQH3DtqTGM1diquK9w",
+      "genresId": 2,
       "internalcode": "172371",
       "score": "31",
       "cpfnumber": "123127538",
@@ -143,14 +149,69 @@
       "id": 12
     }
   ],
-  "comments": [
+  "studentAddress": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "studentId": 1,
+      "city": "Ribeirão Preto",
+      "address": "Rua Antonio Carlos Nero",
+      "number": 340,
+      "neighbor": "Manoel Penna",
+      "zipcode": "18273.1232",
+      "complement": "Próximo a praça"
+    },
+    {
+      "id": 2,
+      "studentId": 1,
+      "city": "Sertãozinho",
+      "address": "Rua Das Flores",
+      "number": 223,
+      "neighbor": "Centro",
+      "zipcode": "1312.232",
+      "complement": "Farmácia"
+    },
+    {
+      "id": 3,
+      "studentId": 2,
+      "city": "Sertãozinho",
+      "address": "Rua Das Flores",
+      "number": 223,
+      "neighbor": "Centro",
+      "zipcode": "1312.232",
+      "complement": "Farmácia"
     }
   ],
-  "genres": [
+  "studentGenres": [
+    {
+      "id": 1,
+      "studentId": 1,
+      "descr": "Masculino"
+    },
+    {
+      "id": 2,
+      "studentId": 3,
+      "descr": "Feminino"
+    },
+    {
+      "id": 3,
+      "studentId": 2,
+      "descr": "Indefinido"
+    }
+  ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "genre": [
     {
       "id": 1,
       "key": 1,
