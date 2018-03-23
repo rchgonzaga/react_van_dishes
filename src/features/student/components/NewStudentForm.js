@@ -1,11 +1,13 @@
+// eslint-disable-line import/no-mutable-exports
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import { Form, Button, Tab, Table, Icon, Checkbox } from 'semantic-ui-react';
 import { InputField, SelectField } from '../SemanticUiReduxForm';
 import { selectStudent } from '../redux/selectStudent';
+import CommonTable from '../../common/CommonTable';
 
-const validate = (values) => {
+const validate = values => {
   const errors = {};
   if (!values.firstname) {
     errors.firstname = 'First name is required';
@@ -79,6 +81,34 @@ const panes = [
       </Tab.Pane>
     ),
   },
+  {
+    menuItem: 'Emails',
+    render: () => (
+      <Tab.Pane>
+        <CommonTable
+          data={[{ firstName: 'Rfael', lastName: 'Gonzaga', username: 'rchgonzaga', email: 'asuiasd@tera.com' }]}
+          header={[
+            {
+              name: 'First name',
+              prop: 'firstName',
+            },
+            {
+              name: 'Last name',
+              prop: 'lastName',
+            },
+            {
+              name: 'Username',
+              prop: 'username',
+            },
+            {
+              name: 'Email',
+              prop: 'email',
+            },
+          ]}
+        />
+      </Tab.Pane>
+    ),
+  },
   { menuItem: 'Phones', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
   { menuItem: 'People', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
   { menuItem: 'Finance', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
@@ -86,9 +116,9 @@ const panes = [
   { menuItem: 'Contacs', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
 ];
 
-const TabExampleBasic = () => <Tab panes={panes} />;
+const TabExampleBasic = props => <Tab panes={panes} />;
 
-let NewStudentForm = (props) => {
+let NewStudentForm = props => {
   const { handleSubmit, pristine, reset, submitting, cancelBtn, genreList, schoolsList } = props;
   return (
     <Form onSubmit={handleSubmit}>
@@ -120,7 +150,7 @@ let NewStudentForm = (props) => {
         <Field name="cpfnumber" label="Cpf Number" component={InputField} placeholder="Cpf Number" width={6} />
         <Field name="rgnumber" label="Rg Number" component={InputField} placeholder="Rg Number" width={6} />
       </Form.Group>
-      <TabExampleBasic />
+      <TabExampleBasic {...props} />
       <br />
       <Button disabled={submitting}>Submit</Button>
       <Button disabled={pristine || submitting} onClick={reset}>
@@ -140,9 +170,9 @@ NewStudentForm = reduxForm({
 // You have to connect() to any reducers that you wish to connect to yourself
 NewStudentForm = connect(
   state => ({
-    initialValues: state.student.selectedStudent // pull initial values from account reducer
+    initialValues: state.student.selectedStudent, // pull initial values from account reducer
   }),
-  { load: selectStudent } // bind account loading action creator
+  { load: selectStudent }, // bind account loading action creator
 )(NewStudentForm);
 
 export default NewStudentForm;
