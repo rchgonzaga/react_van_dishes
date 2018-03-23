@@ -2,7 +2,7 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
-import { Form, Button, Tab, Table, Icon, Checkbox } from 'semantic-ui-react';
+import { Form, Button, Tab, Table, Icon, Checkbox, Container } from 'semantic-ui-react';
 import { InputField, SelectField } from '../SemanticUiReduxForm';
 import { selectStudent } from '../redux/selectStudent';
 import CommonTable from '../../common/CommonTable';
@@ -38,46 +38,55 @@ const validate = (values) => {
 const panes = [
   {
     menuItem: 'Adresses',
-    render: () => (
+    render: props => (
       <Tab.Pane>
-        <Table compact celled definition>
-          <Table.Header>
-            <Table.Row>
-              <Table.HeaderCell />
-              <Table.HeaderCell>Cidade</Table.HeaderCell>
-              <Table.HeaderCell>Logradouro</Table.HeaderCell>
-              <Table.HeaderCell>Numero</Table.HeaderCell>
-              <Table.HeaderCell>Bairro</Table.HeaderCell>
-              <Table.HeaderCell>CEP</Table.HeaderCell>
-              <Table.HeaderCell>Complemento</Table.HeaderCell>
-            </Table.Row>
-          </Table.Header>
-
-          <Table.Body>
-            <Table.Row>
-              <Table.Cell collapsing>
-                <Checkbox slider />
-              </Table.Cell>
-              <Table.Cell>Ribeirão Preto</Table.Cell>
-              <Table.Cell>Rua: Antonio Carlos Nero</Table.Cell>
-              <Table.Cell>350</Table.Cell>
-              <Table.Cell>Casa dos fundos</Table.Cell>
-              <Table.Cell>14098-350</Table.Cell>
-              <Table.Cell>Perto da padaria</Table.Cell>
-            </Table.Row>
-          </Table.Body>
-
-          <Table.Footer fullWidth>
-            <Table.Row>
-              <Table.HeaderCell />
-              <Table.HeaderCell colSpan="6">
-                <Button floated="right" icon labelPosition="left" primary size="small">
-                  <Icon name="user" /> Adicionar Endereço
-                </Button>
-              </Table.HeaderCell>
-            </Table.Row>
-          </Table.Footer>
-        </Table>
+        <Container fluid>
+          <Form.Group widths="equal">
+            <Form.Input
+              fluid
+              id="form-subcomponent-shorthand-input-first-name"
+              placeholder="First name"
+            />
+            <Form.Input
+              fluid
+              id="form-subcomponent-shorthand-input-last-name"
+              placeholder="Last name"
+            />
+          </Form.Group>
+        </Container>
+        <CommonTable
+          data={props.addresslist}
+          header={[
+            {
+              name: 'Cod',
+              prop: 'id',
+            },
+            {
+              name: 'City',
+              prop: 'city',
+            },
+            {
+              name: 'Address',
+              prop: 'address',
+            },
+            {
+              name: 'Number',
+              prop: 'number',
+            },
+            {
+              name: 'Neighbor',
+              prop: 'neighbor',
+            },
+            {
+              name: 'Zip Code',
+              prop: 'zipcode',
+            },
+            {
+              name: 'Complement',
+              prop: 'complement',
+            },
+          ]}
+        />
       </Tab.Pane>
     ),
   },
@@ -108,10 +117,20 @@ const panes = [
   { menuItem: 'Contacs', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
 ];
 
-const TabExampleBasic = props => <Tab panes={panes} emaillist={props.emaillist} />;
+const TabExampleBasic = props => <Tab panes={panes} emaillist={props.emaillist} addresslist={props.addresslist} />;
 
 let NewStudentForm = (props) => {
-  const { handleSubmit, pristine, reset, submitting, cancelBtn, genreList, schoolsList, emailList } = props;
+  const {
+    handleSubmit,
+    pristine,
+    reset,
+    submitting,
+    cancelBtn,
+    genreList,
+    schoolsList,
+    emailList,
+    addressList,
+  } = props;
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group>
@@ -142,7 +161,7 @@ let NewStudentForm = (props) => {
         <Field name="cpfnumber" label="Cpf Number" component={InputField} placeholder="Cpf Number" width={6} />
         <Field name="rgnumber" label="Rg Number" component={InputField} placeholder="Rg Number" width={6} />
       </Form.Group>
-      <TabExampleBasic emaillist={emailList} />
+      <TabExampleBasic emaillist={emailList} addresslist={addressList} />
       <br />
       <Button disabled={submitting}>Submit</Button>
       <Button disabled={pristine || submitting} onClick={reset}>
