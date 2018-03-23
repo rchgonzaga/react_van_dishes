@@ -11,6 +11,16 @@
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
+      "addresses": [{
+        "id": 1,
+        "studentId": 1,
+        "city": "Ribeirão Preto",
+        "address": "Rua Antonio Carlos Nero",
+        "number": 340,
+        "neighbor": "Manoel Penna",
+        "zipcode": "18273.1232",
+        "complement": "Próximo a praça"
+      }],
       "emails": [
         {
           "id": 152,
@@ -49,6 +59,16 @@
       "score": "331",
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
+      "addresses": [{
+        "id": 1,
+        "studentId": 1,
+        "city": "Ribeirão Preto",
+        "address": "Rua Antonio Carlos Nero",
+        "number": 340,
+        "neighbor": "Manoel Penna",
+        "zipcode": "18273.1232",
+        "complement": "Próximo a praça"
+      }],
       "emails": [
         {
           "id": 111,
@@ -92,6 +112,16 @@
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
+      "addresses": [{
+        "id": 1,
+        "studentId": 1,
+        "city": "Ribeirão Preto",
+        "address": "Rua Antonio Carlos Nero",
+        "number": 340,
+        "neighbor": "Manoel Penna",
+        "zipcode": "18273.1232",
+        "complement": "Próximo a praça"
+      }],
       "emails": [
         {
           "id": 19,
@@ -135,6 +165,16 @@
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
+      "addresses": [{
+        "id": 1,
+        "studentId": 1,
+        "city": "Ribeirão Preto",
+        "address": "Rua Antonio Carlos Nero",
+        "number": 340,
+        "neighbor": "Manoel Penna",
+        "zipcode": "18273.1232",
+        "complement": "Próximo a praça"
+      }],
       "emails": [
         {
           "id": 1,
@@ -169,6 +209,16 @@
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
+      "addresses": [{
+        "id": 1,
+        "studentId": 1,
+        "city": "Ribeirão Preto",
+        "address": "Rua Antonio Carlos Nero",
+        "number": 340,
+        "neighbor": "Manoel Penna",
+        "zipcode": "18273.1232",
+        "complement": "Próximo a praça"
+      }],
       "emails": [
         {
           "id": 1,
@@ -203,6 +253,16 @@
       "score": 331,
       "cpfnumber": "331.222.312-22",
       "rgnumber": "31.231.122-33",
+      "addresses": [{
+        "id": 1,
+        "studentId": 1,
+        "city": "Ribeirão Preto",
+        "address": "Rua Antonio Carlos Nero",
+        "number": 340,
+        "neighbor": "Manoel Penna",
+        "zipcode": "18273.1232",
+        "complement": "Próximo a praça"
+      }],
       "emails": [
         {
           "id": 1,
@@ -236,6 +296,16 @@
       "score": "6371",
       "cpfnumber": "172361725837",
       "rgnumber": "7772",
+      "addresses": [{
+        "id": 1,
+        "studentId": 1,
+        "city": "Ribeirão Preto",
+        "address": "Rua Antonio Carlos Nero",
+        "number": 340,
+        "neighbor": "Manoel Penna",
+        "zipcode": "18273.1232",
+        "complement": "Próximo a praça"
+      }],
       "emails": [
         {
           "id": 1,
@@ -270,6 +340,16 @@
       "score": "3123",
       "cpfnumber": "17238657",
       "rgnumber": "977986",
+      "addresses": [{
+        "id": 1,
+        "studentId": 1,
+        "city": "Ribeirão Preto",
+        "address": "Rua Antonio Carlos Nero",
+        "number": 340,
+        "neighbor": "Manoel Penna",
+        "zipcode": "18273.1232",
+        "complement": "Próximo a praça"
+      }],
       "emails": [
         {
           "id": 1,
@@ -304,6 +384,16 @@
       "score": "331",
       "cpfnumber": "17635",
       "rgnumber": "2222",
+      "addresses": [{
+        "id": 1,
+        "studentId": 1,
+        "city": "Ribeirão Preto",
+        "address": "Rua Antonio Carlos Nero",
+        "number": 340,
+        "neighbor": "Manoel Penna",
+        "zipcode": "18273.1232",
+        "complement": "Próximo a praça"
+      }],
       "id": 9,
       "emails": [
         {
@@ -333,6 +423,16 @@
       "score": "37",
       "cpfnumber": "3178265",
       "rgnumber": "765786576",
+      "addresses": [{
+        "id": 1,
+        "studentId": 1,
+        "city": "Ribeirão Preto",
+        "address": "Rua Antonio Carlos Nero",
+        "number": 340,
+        "neighbor": "Manoel Penna",
+        "zipcode": "18273.1232",
+        "complement": "Próximo a praça"
+      }],
       "genre": {
         "id": 1,
         "descr": "Masculino"
@@ -367,6 +467,16 @@
       "score": "33",
       "cpfnumber": "23917263",
       "rgnumber": "98969867",
+      "addresses": [{
+        "id": 1,
+        "studentId": 1,
+        "city": "Ribeirão Preto",
+        "address": "Rua Antonio Carlos Nero",
+        "number": 340,
+        "neighbor": "Manoel Penna",
+        "zipcode": "18273.1232",
+        "complement": "Próximo a praça"
+      }],
       "genre": {
         "id": 1,
         "descr": "Masculino"
@@ -400,6 +510,16 @@
       "score": "31",
       "cpfnumber": "123127538",
       "rgnumber": "8757",
+      "addresses": [{
+        "id": 1,
+        "studentId": 1,
+        "city": "Ribeirão Preto",
+        "address": "Rua Antonio Carlos Nero",
+        "number": 340,
+        "neighbor": "Manoel Penna",
+        "zipcode": "18273.1232",
+        "complement": "Próximo a praça"
+      }],
       "genre": {
         "id": 1,
         "descr": "Masculino"
@@ -433,6 +553,16 @@
       "score": "773",
       "cpfnumber": "1982673.312",
       "rgnumber": "1896531",
+      "addresses": [{
+        "id": 1,
+        "studentId": 1,
+        "city": "Ribeirão Preto",
+        "address": "Rua Antonio Carlos Nero",
+        "number": 340,
+        "neighbor": "Manoel Penna",
+        "zipcode": "18273.1232",
+        "complement": "Próximo a praça"
+      }],
       "id": 13,
       "emails": [
         {
