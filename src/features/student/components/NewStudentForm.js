@@ -7,7 +7,7 @@ import { InputField, SelectField } from '../SemanticUiReduxForm';
 import { selectStudent } from '../redux/selectStudent';
 import CommonTable from '../../common/CommonTable';
 
-const validate = values => {
+const validate = (values) => {
   const errors = {};
   if (!values.firstname) {
     errors.firstname = 'First name is required';
@@ -83,22 +83,14 @@ const panes = [
   },
   {
     menuItem: 'Emails',
-    render: () => (
+    render: props => (
       <Tab.Pane>
         <CommonTable
-          data={[{ firstName: 'Rfael', lastName: 'Gonzaga', username: 'rchgonzaga', email: 'asuiasd@tera.com' }]}
+          data={props.emaillist}
           header={[
             {
-              name: 'First name',
-              prop: 'firstName',
-            },
-            {
-              name: 'Last name',
-              prop: 'lastName',
-            },
-            {
-              name: 'Username',
-              prop: 'username',
+              name: 'Cod',
+              prop: 'id',
             },
             {
               name: 'Email',
@@ -116,10 +108,10 @@ const panes = [
   { menuItem: 'Contacs', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
 ];
 
-const TabExampleBasic = props => <Tab panes={panes} />;
+const TabExampleBasic = props => <Tab panes={panes} emaillist={props.emaillist} />;
 
-let NewStudentForm = props => {
-  const { handleSubmit, pristine, reset, submitting, cancelBtn, genreList, schoolsList } = props;
+let NewStudentForm = (props) => {
+  const { handleSubmit, pristine, reset, submitting, cancelBtn, genreList, schoolsList, emailList } = props;
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group>
@@ -150,7 +142,7 @@ let NewStudentForm = props => {
         <Field name="cpfnumber" label="Cpf Number" component={InputField} placeholder="Cpf Number" width={6} />
         <Field name="rgnumber" label="Rg Number" component={InputField} placeholder="Rg Number" width={6} />
       </Form.Group>
-      <TabExampleBasic {...props} />
+      <TabExampleBasic emaillist={emailList} />
       <br />
       <Button disabled={submitting}>Submit</Button>
       <Button disabled={pristine || submitting} onClick={reset}>

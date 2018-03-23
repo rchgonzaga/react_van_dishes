@@ -31,6 +31,7 @@ export class ModalNewStudent extends Component {
   };
 
   render() {
+    const { emails } = (this.props.student.selectedStudent !== null ? this.props.student.selectedStudent : {emails: {} });
     return (
       <Modal open={this.props.student.modalNewUserVisible} size="fullscreen">
         <Header icon="browser" content={this.props.title} />
@@ -39,6 +40,7 @@ export class ModalNewStudent extends Component {
             onSubmit={this.submit}
             genreList={this.props.student.genreList}
             schoolsList={this.props.student.schoolsList}
+            emailList={emails}
             cancelBtn={
               <Button color="green" inverted onClick={() => this.handleClose()}>
                 <Icon name="checkmark" /> Got it

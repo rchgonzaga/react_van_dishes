@@ -7,8 +7,9 @@ const row = (x, i, header) => (
 
 export default ({ data, header }) => (
   <Table celled striped>
-    <Table.Header />
-    <Table.Row>{header.map((x, i) => <Table.HeaderCell key={`thc-${i}`}>{x.name}</Table.HeaderCell>)}</Table.Row>
+    <Table.Header>
+      <Table.Row>{header.map((x, i) => <Table.HeaderCell key={`thc-${i}`}>{x.name}</Table.HeaderCell>)}</Table.Row>
+    </Table.Header>
     <Table.Body>{data.map((x, i) => row(x, i, header))}</Table.Body>
   </Table>
 );
